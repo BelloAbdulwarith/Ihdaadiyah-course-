@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic and Islamic Studies - Ihdaadiyah Level</title>
+    <style>
+    /* styles.css */
+    
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
+
+body {
+    font-family: "Roboto Condensed", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#hero {
+    text-align: center;
+    background: #e9f5ff;
+    padding: 40px 20px;
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.accordion {
+    margin: 10px 0;
+}
+
+.accordion-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accordion-button:hover {
+    background: #0056b3;
+}
+
+.accordion-content {
+    display: none;
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background: #343a40;
+    color: white;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arabic & Islamic Studies Crash Course</h1>
+        <p><em>For Ihdaadiyah (Preparatory) Level</em></p>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Take the Leap into Advanced Knowledge</h2>
+            <p>
+                Transform your understanding of Arabic and Islamic studies in just 10 weeks! This is your pathway to mastering language skills, exploring Islamic sciences, and unlocking your potential for higher learning.
+            </p>
+            <a href="#overview" class="btn">Explore the Course</a>
+        </section>
+        <section id="overview">
+            <h2>Course Overview</h2>
+            <p>
+                The Arabic and Islamic Studies Crash Course for Ihdaadiyah Level is designed for students ready to refine their foundational knowledge. Dive into advanced grammar, syntax, Qur'anic studies, and Islamic sciences in this intensive program.
+            </p>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="accordion">
+                <button class="accordion-button">Arabic Language Mastery</button>
+                <div class="accordion-content">
+                    <p>Refine grammar, reading, and writing skills through engaging exercises and real-world applications.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-button">Qur'anic and Islamic Studies</button>
+                <div class="accordion-content">
+                    <p>Explore Tafseer, Hadith, and Fiqh with a focus on connecting classical knowledge to modern life.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-button">Tajweed and Qur'anic Recitation</button>
+                <div class="accordion-content">
+                    <p>Master the art of Qur'anic recitation with precise pronunciation and memorization techniques.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-button">Islamic History and Culture</button>
+                <div class="accordion-content">
+                    <p>Learn about key historical events and the contributions of Islamic scholars throughout history.</p>
+                </div>
+            </div>
+        </section>
+        <section id="duration">
+            <h2>Course Duration</h2>
+            <p>This intensive program spans <strong>1 year</strong> with 4 sessions per week, each lasting 1 hour. Flexible scheduling is available for online and in-person learning.</p>
+        </section>
+        <section id="enrollment">
+            <h2>Who Is This Course For?</h2>
+            <p>
+                Designed for students with a foundational understanding of Arabic and Islamic studies, this course is perfect for those looking to prepare for advanced learning and build confidence in their skills.
+            </p>
+            <a href="https://wa.me/message/AOMNZVKEFXIJC1" class="btn">Enroll Now</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Al-husnā Online Learning Space. All rights reserved.</p>
+    </footer>
+    <script>
+    // script.js
+
+// Accordion functionality
+const accordionButtons = document.querySelectorAll('.accordion-button');
+accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+});
+    </script>
+</body>
+</html>
